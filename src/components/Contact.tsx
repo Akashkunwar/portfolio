@@ -27,31 +27,31 @@ function Contact() {
         >
             <a href="mailto:gnspda@gmail.com">
           <div className="email flex flex-row items-center gap-2 flex-wrap group">
-            love emails? drop me a mail{" "}
+            Love emails? drop me a mail{" "}
               <IoMailOutline className="text-black dark:text-white group-hover:text-[#773344] dark:group-hover:text-[#e15679] transition-all" />
           </div>
             </a>
             <a href="https://www.t.me/akashkunwar" target="_blank">
           <div className="telegram flex flex-row items-center gap-2 flex-wrap group">
-            privacy freak? drop me a message{" "}
+            Privacy freak? drop me a message{" "}
               <TbBrandTelegram className="text-black dark:text-white group-hover:text-[#773344] dark:group-hover:text-[#e15679] transition-all" />
           </div>
             </a>
             <a href="https://www.linkedin.com/in/aakashkunwar/" target="_blank">
           <div className="instagram flex flex-row items-center gap-2 flex-wrap group">
-            let's connect on linkedin{" "}
+            Let's connect on linkedin{" "}
               <RiLinkedinLine className="text-black dark:text-white group-hover:text-[#773344] dark:group-hover:text-[#e15679]  transition-all" />
           </div>
             </a>
             <a href="https://github.com/akashkunwar" target="_blank">
           <div className="github flex flex-row items-center gap-2 flex-wrap group">
-            have a thing for open source? pull my{" "}
+            Have a thing for open source? pull my{" "}
               <FiGithub className="text-black dark:text-white group-hover:text-[#773344] dark:group-hover:text-[#e15679]  transition-all" />
           </div>
             </a>
             <a href="https://www.instagram.com/akash_kunwar_" target="_blank">
           <div className="instagram flex flex-row items-center gap-2 flex-wrap group">
-            love being social? find me on{" "}
+            Love being social? find me on{" "}
               <FaInstagram className="text-black dark:text-white group-hover:text-[#773344] dark:group-hover:text-[#e15679]  transition-all" />
           </div>
             </a>
