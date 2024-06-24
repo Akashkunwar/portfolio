@@ -23,7 +23,11 @@ function Home() {
       <div className="body flex flex-col items-center justify-center w-9/12 min-h-[88vh] gap-10">
         <div className="memoji-container w-[200px]">
           <FadeIn>
-            <img className="rounded-full shadow-xl dark:shadow-none" src={memoji} alt="" />
+            <img
+              className="rounded-full shadow-xl dark:shadow-none"
+              src={memoji}
+              alt=""
+            />
           </FadeIn>
         </div>
         <div className="title-container flex flex-col items-center gap-5">
@@ -61,7 +65,11 @@ function Home() {
                 <FaTelegramPlane />
               </Button>
             </Link>
-            <a href='https://drive.google.com/file/d/1yakaapxKKA-v-MPwBzPOJdxPlGPsuKMe/view' rel="noreferrer" target={'_blank'}>
+            <a
+              href="https://www.overleaf.com/read/ksqtrkngmprt#d52825"
+              rel="noreferrer"
+              target={"_blank"}
+            >
               <Button text="Resume" path="">
                 <IoIosPaper />
               </Button>

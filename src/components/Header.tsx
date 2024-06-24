@@ -18,85 +18,105 @@ function Header() {
   };
   return (
     <>
-        <div className="mt-10 flex flex-row gap-10 items-center font-light justify-between w-[90vw]">
-          <div className="memoji-container">
-            <Link to="/">
-              <img className="rounded-full w-20" src={memoji} alt="" />
-            </Link>
-          </div>
-          <div className="nav-links hidden flex-row gap-5 md:flex">
-            <Link to="/">
-              <Button text="Home" path="/">
-                <VscHome />
-              </Button>
-            </Link>
-            <Link to="/about">
-              <Button text="About" path="/about" >
-                <BsPerson />
-              </Button>
-            </Link>
-            <Link to="/projects">
-              <Button text="Projects" path="/projects" >
-                <BsCodeSlash />
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button text="Contact" path="/contact">
-                <FaTelegramPlane />
-              </Button>
-            </Link>
-            <a href="https://drive.google.com/file/d/1yakaapxKKA-v-MPwBzPOJdxPlGPsuKMe/view" rel="noreferrer" target='_blank'>
-              <Button text="Resume">
-                <IoIosPaper />
-              </Button>
-              </a>
-          </div>
-          <FadeIn className="md:hidden" delay={3000} >
-          <div className="mobile-nav-btn md:hidden text-3xl" onClick={handleNavClick}>
+      <div className="mt-10 flex flex-row gap-10 items-center font-light justify-between w-[90vw]">
+        <div className="memoji-container">
+          <Link to="/">
+            <img className="rounded-full w-20" src={memoji} alt="" />
+          </Link>
+        </div>
+        <div className="nav-links hidden flex-row gap-5 md:flex">
+          <Link to="/">
+            <Button text="Home" path="/">
+              <VscHome />
+            </Button>
+          </Link>
+          <Link to="/about">
+            <Button text="About" path="/about">
+              <BsPerson />
+            </Button>
+          </Link>
+          <Link to="/projects">
+            <Button text="Projects" path="/projects">
+              <BsCodeSlash />
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button text="Contact" path="/contact">
+              <FaTelegramPlane />
+            </Button>
+          </Link>
+          <a
+            href="https://www.overleaf.com/read/ksqtrkngmprt#d52825"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Button text="Resume">
+              <IoIosPaper />
+            </Button>
+          </a>
+        </div>
+        <FadeIn className="md:hidden" delay={3000}>
+          <div
+            className="mobile-nav-btn md:hidden text-3xl"
+            onClick={handleNavClick}
+          >
             <CgMenuRightAlt />
           </div>
-          </FadeIn>
-        </div>
+        </FadeIn>
+      </div>
       {navOpened && (
-        <div className="mobile-nav w-screen h-screen md:hidden fixed backdrop-blur-md flex flex-col items-center py-20 gap-10" onClick={handleNavClick}>
+        <div
+          className="mobile-nav w-screen h-screen md:hidden fixed backdrop-blur-md flex flex-col items-center py-20 gap-10"
+          onClick={handleNavClick}
+        >
           <div className="mobile-nav-child w-[85vw] flex flex-row-reverse text-3xl">
             <RiCloseLine />
           </div>
-          <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl " >
-          <Link to="/">
-            <Button text="Home" path="/">
-              {<VscHome/>}
-            </Button>
-          </Link>
-          </div>
-          <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl" >
-          <Link to="/about">
-            <Button text="About" path="/about" onClick={() => setNavOpened(false)}>
-              {<BsPerson/>}
-            </Button>
-          </Link>
+          <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl ">
+            <Link to="/">
+              <Button text="Home" path="/">
+                {<VscHome />}
+              </Button>
+            </Link>
           </div>
           <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl">
-          <Link to="/projects">
-            <Button text="Projects" path="/projects" onClick={() => setNavOpened(false)}>
-              {<BsCodeSlash/>}
-            </Button>
-          </Link>
+            <Link to="/about">
+              <Button
+                text="About"
+                path="/about"
+                onClick={() => setNavOpened(false)}
+              >
+                {<BsPerson />}
+              </Button>
+            </Link>
           </div>
-            <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl">
-          <Link to="/contact">
+          <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl">
+            <Link to="/projects">
+              <Button
+                text="Projects"
+                path="/projects"
+                onClick={() => setNavOpened(false)}
+              >
+                {<BsCodeSlash />}
+              </Button>
+            </Link>
+          </div>
+          <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl">
+            <Link to="/contact">
               <Button text="Contact" path="/contact">
-                {<FaTelegramPlane/>}
+                {<FaTelegramPlane />}
               </Button>
-          </Link>
-            </div>
-            <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl">
-          <a href="https://drive.google.com/file/d/1yakaapxKKA-v-MPwBzPOJdxPlGPsuKMe/view" rel='noreferrer' target="_blank">
-              <Button text="Resume">
-                {<IoIosPaper/>}
-              </Button>
-          </a>
-            </div>
+            </Link>
+          </div>
+          <div className="mobile-nav-child w-[85vw] flex flex-row justify-center text-2xl">
+            <a
+              href="https://www.overleaf.com/read/ksqtrkngmprt#d52825"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Button text="Resume">{<IoIosPaper />}</Button>
+            </a>
+          </div>
         </div>
       )}
     </>
